@@ -9,7 +9,7 @@ client = Twitter::REST::Client.new do |config|
   config.access_token_secret = "ACCESS_TOKEN_SECRET"
 end
 
-palabra = File.open("dikshonario.txt").first.strip!
+palabra = File.open("dikshonario.txt").first.strip
 
 unless palabra.nil?
   puts palabra
