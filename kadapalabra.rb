@@ -87,7 +87,7 @@ unless first_line.nil?
 
   variantenan = data_foi_bankortografiko(first_line)
 
-  unless variantenan.empty?
+  unless variantenan.count <= 1
     text = ''
     variantenan.each do |variante|
       text += "#{variante["orthographic_type"]}: #{variante["lexeme"]} "
